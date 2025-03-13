@@ -37,6 +37,8 @@ export class SDKViewManager {
     const white = Color.fromRGBA(255, 255, 255, 1);
     const green = Color.fromRGBA(0, 255, 0, 1);
     const red = Color.fromRGBA(255, 0, 0, 1);
+    const blue = Color.fromRGBA(0, 0, 255, 1);
+    const yellow = Color.fromRGBA(255, 255, 0, 1);
 
     let newBrush: Brush;
     switch (type) {
@@ -50,6 +52,14 @@ export class SDKViewManager {
       }
       case BrushType.Default: {
         newBrush = new Brush(transparent, white, 2);
+        break;
+      }
+      case BrushType.Blue: {
+        newBrush = new Brush(transparent, blue, 2);
+        break;
+      }
+      case BrushType.Yellow: {
+        newBrush = new Brush(transparent, yellow, 2);
         break;
       }
     }
