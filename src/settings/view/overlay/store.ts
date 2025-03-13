@@ -5,6 +5,8 @@ export enum BrushType {
   Default = "Default",
   Red = "Red",
   Green = "Green",
+  Blue = 'Blue',
+  Yellow = 'Yellow',
 }
 
 export const layoutStyle = writable<IdLayoutStyle>();
