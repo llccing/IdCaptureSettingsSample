@@ -163,6 +163,8 @@ export class SDKIdCaptureManager {
     scannedDocument.set(capturedId);
     showScanResults.set(true);
 
+    console.log("Captured ID: ", capturedId);
+    console.log("Captured ID: stringify", JSON.stringify(capturedId));
     void this.idCapture.reset();
   }
 
